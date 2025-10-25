@@ -1,6 +1,3 @@
--- schema.sql
--- Idempotent schema: drops and recreates tables for a clean run.
--- NOTE: in production you wouldn't drop tables blindly; this is for assignment/testing simplicity.
 
 DROP TABLE IF EXISTS ratings;
 DROP TABLE IF EXISTS movie_genres;
