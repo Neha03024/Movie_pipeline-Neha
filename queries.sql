@@ -26,7 +26,7 @@ JOIN
 GROUP BY 
     mg.genre
 HAVING 
-    movie_count > 5 -- skip tiny genres to avoid bias
+    movie_count > 5 
 ORDER BY 
     avg_rating DESC
 LIMIT 5;
