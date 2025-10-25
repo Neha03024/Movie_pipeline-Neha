@@ -32,7 +32,5 @@ SELECT m.year, ROUND(AVG(r.rating), 2) AS avg_rating, COUNT(DISTINCT m.movie_id)
 FROM  movies m
 JOIN ratings r ON m.movie_id = r.movie_id
 WHERE  m.year IS NOT NULL
-GROUP BY 
-    m.year
-ORDER BY 
-    m.year ASC;
+GROUP BY m.year
+ORDER BY m.year ASC;
