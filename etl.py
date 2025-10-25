@@ -6,11 +6,11 @@ from time import sleep
 import os
 
 #  CONFIGURATION  #
-DB_USER = "root"     # change if needed
-DB_PASSWORD = "Mycutedata16$"
+DB_USER = "root"     
+DB_PASSWORD = "your_sql_password"
 DB_HOST = "localhost"
 DB_NAME = "movie_db"
-OMDB_API_KEY = "9a65b34"  # get from http://www.omdbapi.com/apikey.aspx
+OMDB_API_KEY = "your_ombd_key"  # get from http://www.omdbapi.com/apikey.aspx
 
 # create SQLAlchemy engine
 engine = create_engine(f"mysql+mysqlconnector://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}", echo=False)
