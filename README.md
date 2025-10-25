@@ -39,12 +39,12 @@ Dataset	      - MovieLens “small” dataset
 
 1️. Set Up Your Environment
 
-Make sure you have Python 3.8 installed on your system, along with MySQL Server.
-You’ll also need an OMDb API key — it’s free and can be generated from http://www.omdbapi.com/
+Make sure Python 3.8 is installed in the system, along with MySQL Server.
+we also need an OMDb API key — it’s free and can be generated from http://www.omdbapi.com/
 
 2️. Install the Required Libraries
 
-Once you’ve cloned the repository, open a terminal inside your project folder and install the dependencies:
+Once repository is cloned, open a terminal inside the project folder and install the dependencies:
 
 pip install pandas sqlalchemy mysql-connector-python requests
 
@@ -65,7 +65,7 @@ Download the MovieLens “small” dataset from https://grouplens.org/datasets/m
 
 Once downloaded, copy the movies.csv and ratings.csv files into the data/ folder of this project.
 
-Your folder should now look like this:
+the folder should now look like this:
 
 movie_pipeline/
 └── data/
@@ -126,8 +126,7 @@ Wrapped API requests and database operations in try/except blocks to ensure grac
 Added indexes on movie_id and year for faster joins and aggregations.
 
 5.Extensibility:
-The schema is designed so that future datasets (e.g., user demographics or reviews) can be integrated easily.
-
+The schema is designed so that future datasets can be integrated easily.
 
 ----------------------------------------------Challenges and Solutions----------------------------------
 
@@ -145,7 +144,6 @@ Used primary keys and controlled inserts to prevent reloading duplicates
 
 5.Schema relationships:
 Designed normalized tables with foreign keys to maintain data integrity
-
 
 ---------------------------------------------Improvements Made During Development----------------------------
 
