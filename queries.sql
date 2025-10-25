@@ -1,4 +1,4 @@
---1. Which movie has the highest average rating?
+-- 1. Which movie has the highest average rating?
     
 SELECT m.title, ROUND(AVG(r.rating), 2) AS avg_rating
 FROM ratings r
@@ -7,7 +7,7 @@ GROUP BY m.movie_id
 ORDER BY avg_rating DESC
 LIMIT 1;
 
---2.  What are the top 5 movie genres with the highest average rating?
+-- 2.  What are the top 5 movie genres with the highest average rating?
     
 SELECT mg.genre, ROUND(AVG(r.rating), 2) AS avg_rating, COUNT(DISTINCT m.movie_id) AS movie_count
 FROM  movie_genres mg
@@ -18,7 +18,7 @@ HAVING movie_count > 5
 ORDER BY avg_rating DESC
 LIMIT 5;
 
---3.  Who is the director with the most movies?
+-- 3.  Who is the director with the most movies?
     
 SELECT md.director, COUNT(DISTINCT md.movie_id) AS total_movies
 FROM movie_directors md
@@ -26,7 +26,7 @@ GROUP BY  md.director
 ORDER BY total_movies DESC
 LIMIT 1;
 
---4.  What is the average rating of movies released each year?
+-- 4.  What is the average rating of movies released each year?
     
 SELECT m.year, ROUND(AVG(r.rating), 2) AS avg_rating, COUNT(DISTINCT m.movie_id) AS movie_count
 FROM  movies m
