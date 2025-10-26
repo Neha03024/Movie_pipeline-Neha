@@ -29,10 +29,10 @@ movie_pipeline/
 
 ------------------------------------------Tools and Frameworks-----------------------------
 
-Programming   - Python 3
-Libraries	  - pandas, requests, SQLAlchemy, mysql-connector-python
-Database	  - MySQL
-External API  - OMDb API (Open Movie Database)
+Programming   - Python 3,
+Libraries	  - pandas, requests, SQLAlchemy, mysql-connector-python,
+Database	  - MySQL,
+External API  - OMDb API (Open Movie Database),
 Dataset	      - MovieLens “small” dataset
 
 ------------------------------------------Setup & How to Run the Project-------------------
